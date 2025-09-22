@@ -25,11 +25,10 @@ class plane:
     def show(self):
         print('Plane {}, coordinates on {} now'.format(self.id, self.position))
 
-
-ucak1 = plane('u1', (0, 0, 0))
-siha1 = plane("s1", (0, 0, 0))
-iha1 = plane("i1", (0, 0, 0)) # gri görünen alanlar pycharm'ın kendi eklediği şeyler. normalde biz eklemiyoruz
-
+ucak1 = plane('ucak1.0', (0, 0, 0))
+siha1 = plane("siha1.0", (0, 0, 0))
+iha1 = plane("iha1.0", (0, 0, 0)) # gri görünen alanlar pycharm'ın kendi eklediği şeyler. normalde biz eklemiyoruz
+siha1.show()
 
 class filo:
     def __init__(self):
@@ -44,3 +43,5 @@ class filo:
             print("Our filo has {} ".format(i.id))
 
 filo2 = filo()
+filo2.add_to_filo(siha1)
+filo2.show()
